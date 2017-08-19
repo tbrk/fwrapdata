@@ -26,13 +26,15 @@
 #ifndef _FWRAPDATA_H_
 #define _FWRAPDATA_H_
 
+#include <CoreFoundation/CoreFoundation.h>
+
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
 /*
- * Provide stream access to a CFMutableData structure.
+ * Stream access to a CFMutableData structure.
  *
  * It is possible to access the underlying data concurrently with stdio
  * functions, CFData/CFMutableData functions, and NSData/NSMutableData

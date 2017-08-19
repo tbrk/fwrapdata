@@ -23,7 +23,7 @@
  * 2017 Timothy Bourke (tim@tbrk.org)
  */
 
-#include <CoreFoundation/CoreFoundation.h>
+#include "fwrapdata.h"
 
 typedef struct fstate {
     CFMutableDataRef data;
