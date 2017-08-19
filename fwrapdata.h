@@ -41,8 +41,10 @@ extern "C"
  * methods. Direct access to the underlying data does not change the stream
  * position (it may be desirable to fseek() after adding or changing bytes).
  *
- * fclose() must eventually be called on the returned handle to liberate
- * internally allocated memory.
+ * fwrapdata() calls CFRetain on given data structure.
+ *
+ * fclose() must eventually be called on the returned handle to CFRelease
+ * the given data structure and to liberate internally allocated memory.
  */
 FILE *fwrapdata(CFMutableDataRef data);
 

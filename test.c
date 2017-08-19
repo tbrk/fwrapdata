@@ -65,6 +65,7 @@ main (void)
     encode_data(data);
 
     fclose (stream);
+    CFRelease(data);
 
     return 0;
 }
